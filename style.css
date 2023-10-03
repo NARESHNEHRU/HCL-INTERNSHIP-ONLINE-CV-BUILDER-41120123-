@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-poppins: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+hatch{
+    text-align: center;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-poppins);
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+.font-poppins{font-family: var(--font-poppins);}
+.text-center{ text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-uppercase{text-transform: uppercase;}
+.text-lowercase{text-transform: lowercase;}
+.text-capitalize{text-transform: capitalize;}
+.text{
+    color:#1e2532;
+    opacity: 0.9;
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+/* resume page */
+#about-sc{
+    padding: 64px 0;
+}
+
+.cv-form-row-title{
+    background-color: #656e83;
+    padding: 0.8rem 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.cv-form-row-title h3{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.7rem;
+}
+.cv-form-blk{
+    margin: 3rem 0;
+}
+.cv-form-row{
+    padding: 3rem 2rem 0 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+    position: relative;
+}
+textarea{
+    resize: none;
+}
+.form-elem{
+    margin-bottom: 3rem;
+    position: relative;
+}
+.form-label{
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.form-control{
+    border-radius: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    padding: 0.8rem 1.6rem;
+    font-family: inherit;
+    width: 100%;
+    outline: 0;
+    transition:all 300ms ease-in-out ;
+}
+
+.form-control:focus{
+    border-color: rgba(0, 0, 0, 0.3);
+}
+.form-text{
+    color: #ca0b00;
+    font-size: 12px;
+    position: absolute;
+    letter-spacing: 0.5px;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 100%;
+}
+.cols-3, .cols-2{
+    display: grid;
+}
+.repeater-add-btn{
+    width: 25px;
+    height: 25px;
+    background-color:#1A91F0 ;
+    font-size: 1.6rem;
+    color:white;
+    margin: 1rem 0;
+}
+.repeater-remove-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+}
+
+/* preview section */
+.template1-cont{
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 32% auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
+}
+
+.template1-cont1{
+    color: white;
+    background-color: #656e83;
+    padding: 3rem 3rem 2rem 3rem;
+}
+.template1-cont1-r{
+    padding: 3rem 3rem 3rem 4rem;
+}
+.template1-cont1 .template1-blank:nth-child(1){
+    text-align: center;
+}
+.template1-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+.template1-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.template1-item-name{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 1.8rem 0;
+    position: relative;
+}
+.template1-item-name::after{
+    position: absolute;
+    bottom: -10px;
+    width: 50px;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.template1-blank{
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.template1-blank-title h3{
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 0.5rem;
+}
+.template1-blank-title{
+    margin-bottom: 1rem;
+}
+.template1-blank-list .template1-item{
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    opacity: 0.95;
+}
+.template1-cont1-r .template1-blank-title{
+    color:#1e2532 ;
+}
+.template1-cont1-r .template1-blank-list .template1-item{
+    margin-top: 1.8rem;
+}
+
+.educations-items.template1-blank-list .template1-item span:first-child,
+.educations-items.template1-blank-list .template1-item span:nth-child(2),
+.workexp-items.template1-blank-list .template1-item span:first-child,
+.workexp-items.template1-blank-list .template1-item span:nth-child(2){
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+
+.educations-items.template1-blank-list .template1-item span:nth-child(3),
+.educations-items.template1-blank-list .template1-item span:nth-child(4){
+    margin-right: 1rem;
+    background-color:#1A91F0;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    border-radius: 0.6rem;
+
+}
+.workexp-items.template1-blank-list .template1-item span:nth-child(3),
+.workexp-items.template1-blank-list .template1-item span:nth-child(4),
+.educations-items.template1-blank-list .template1-item span:nth-child(5),
+.educations-items.template1-blank-list .template1-item span:nth-child(6){
+    margin-right: 1rem;
+    background-color: #656e83;
+    color: white;
+    padding: 0 1rem;
+    border-radius: 0.6rem;
+    
+}
+.workexp-items.template1-blank-list .template1-item span:nth-child(5){
+    margin-right: 1rem;
+    background-color: #1A91F0;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 1rem;
+    border-radius: 0.6rem; 
+}
+.workexp-items.template1-blank-list .template1-item span:nth-child(6){
+    font-size: 13.5px;
+    display: block;
+    margin-top: 1rem;
+    text-indent: 3rem;
+}
+.achievements-items.template1-blank-list .template1-item span:first-child{
+    display: block;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.achievements-items.template1-blank-list .template1-item span:nth-child(2){
+    font-size: 13.5px;
+    display: block;
+    margin-top: 1rem;
+    text-indent: 3rem;
+    
+}
+.projects-items.template1-blank-list .template1-item span:first-child{
+    display: block;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.projects-items.template1-blank-list .template1-item span:nth-child(2),
+.projects-items.template1-blank-list .template1-item span:nth-child(3){
+    font-size: 13.5px;
+    display: block;
+    margin-top: 1rem;
+    text-indent: 3rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .cols-3{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    .cols-2{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .cv-form-row{
+        padding: 3rem 3rem 0rem 3rem;
+    }
+    .cols-3{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.print-btn-sc{
+    margin: 2rem 0 6rem 0;
+    
+}
+.btn{
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 1.4rem 1.6rem;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #1A91F0;
+    color:white;
+    transition: all 300ms ease-in-out ;
+}
+
+/* print section */
+@media print{
+    body *{
+        visibility: hidden;
+    }
+
+    .non_print_area{
+        display: none;
+    }
+
+    .print_area, .print_area *{
+        visibility: visible;
+    }
+
+    .print_area{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+    }
+    
+}
